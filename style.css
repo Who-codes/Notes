@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 20px;
+    position: relative;
+    transition: all ease-in-out 200ms;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em;
+}
+
+h1{
+    text-align: center;
+}
+
+.note-taking-area{
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+    padding: 1em 1.5em;
+}
+
+textarea{
+    width: 80%;
+    height: 100px;
+    resize: none;
+    font-size: 18px;
+    padding: 0.25em 0.75em;
+}
+
+.note-area{
+    padding: 0.5em 1em;
+}
+
+.short-note{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.note, .full-note{
+    border: 2px solid black;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
+    padding: 0.5em 0.75em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    line-height: 1.5;
+}
+
+.btn, .short-note-btn{
+    padding: 0.25em 0.75em;
+    font-weight: bold;
+    font-size: inherit;
+}
+
+.short-note-btn{
+    font-size: 16px;
+    text-transform: capitalize;
+    align-self: flex-start;
+}
+
+.full-note{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 500px;
+    display: flex;
+    height: 500px;
+    overflow-y: scroll;
+    background-color: rgb(255, 255, 255);
+}
+
+.new-div{
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.25em 0.75em;
+}
+
+.fullText{
+    padding: 0.25em 0.75em;
+    font-size: inherit;
+}
+
+.close{
+    background: transparent;
+    border: none;
+    font-size: 16px;
+}
+
+.close:hover, .close:active{
+    opacity: 0.7;
+}
+
+.hide{
+    display: none;
+}
+
+
